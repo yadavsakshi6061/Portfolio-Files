@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/7154cb86f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="i.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fa" onclick="closemenu()"></i>            </ul>
+            <i class="fa" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h1>Hi, I'm <span>Sakshi Yadav</span><br>From Karnataka</h1>
+        </div>
+    </div>
+</div>
+
+<!--------------about------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pick.png" alt="About Me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A young mind seeking a challenging role where I can utilize my skills and experience to provide satisfactory service, while being resourceful, innovative, flexible, and aspiring to be recognized for all my good work.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>BACHELOR OF ENGINEERING : 2024</span><br>CSE, Jain College of Engineering & Research <br>
+                            CGPA: 7.8</li>
+                            <li><span> DIPLOMA: 2021</span><br>CS, Maratha Mandal Polytechnic <br> PERCENTAGE: 72%</li>
+                            <li><span>SSLC: 2018 </span><br>ST Xavier's Hight School<br> PERCENTAGE: 62%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><i class="fad fa-undefined"></i> Python<br> <i class="fa-solid fa-angle-right"></i>  Java <br><i class="fa-solid fa-angle-right"></i> MySQL</li>
+                        <li><i class="fa-solid fa-angle-right"></i> Html,Css,JavaScript <br> <i class="fa-solid fa-angle-right"></i> JavaScript-react</li>
+                        <li><i class="fa-solid fa-angle-right"></i> API Development  <br><i class="fa-solid fa-angle-right"></i> Frameworks: Django, Flask</li>
+                        <li><i class="fa-solid fa-angle-right"></i> NumPy, Pandas, Matplotlib <br><i class="fa-solid fa-angle-right"></i> Web Scraping & File Handling </li>
+                        <li><i class="fa-solid fa-angle-right"></i> Microsoft Soft </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>FULL STACK DEVELOPMENT - Intern </span><br><br>Company: DLithe Consultancy Services Pvt Ltd, 04/2024 – 05/2024<br>
+                        Designed and developed websites using HTML, CSS, JavaScript,Utilized Python (Django) for backend development,Organized and managed data using MySql. 
+                          <br><br></li>
+
+                    </ul>
+                    <ul>
+                        <li><span>DATA SCIENCE WITH PYTHON AND MACHINE LEARNING - Intern </span><br><br>
+                        Company: Pranaksh Technologies LLP, 08/2023 - 10/2023 <br>Proficient in NumPy, Pandas, Matplotlib and Experienced in web scraping and file handing.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------services----------------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="Projects-list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>INVENTORY MANAGEMENT PLATFORM</h2>
+                <p> Developing a Python-based inventory management platform with CRUD operations, real-time tracking, purchasing and seamless integrations. Designed management and user-friendly operations.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>FIFA STATISTICS DATA </h2>
+                <p>Conducted analysis of football team and player statistics to deliver actionable insights. Employed NumPy, Pandas, Matplotlib, and file handling for comprehensive data processing and visualization. Used: NumPy, Pandas, Matplotlib & File Handling.</p>
+                <a href="https://github.com/yadavsakshi6061/FIFA_STATS_DATA">Click here for Github-link</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>SELF-CHECKOUT APP</h2>
+                <p>Develop self-checkout mobile app with user 
+                    authentication, barcode scanning, real-time pricing, 
+                    secure payments, Store map and product locator. 
+                    Used: Java and Xml on android studio, MySQL 
+                    Database, ZXing.</p>
+                <a href="https://github.com/yadavsakshi6061/Final-year-project---title-SELF-CHEACKOUT-APP-">Click here for Github-link</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--------------------portfolio--------->
+</div>
+
+<!--------------Contact--------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope-open-text"></i>sakshiyadav6061@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9632909668</p>
+                <div class="social-icons">
+                    <a href="http://github.com/yadavsakshi6061 "><i class="fa-brands fa-github"></i></a>
+                    <a href="linkedin.com/in/sakshiyadav933"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="SAKSHI [ CV ].pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="Contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6"  placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1kwmQ3ekGGxu9BkLcO-YhC1TgEXSgsY_hh2rB6x9CTS5UBRCFmf0QudbJNLkm9JoH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
